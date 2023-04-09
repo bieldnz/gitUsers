@@ -4,7 +4,7 @@ import Styles from "../../styles/starwars.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';4
 type SearchProps = {
   nameFilms: string[],
-  mostrar: (opa: any) => void
+  mostrar: (name: string) => void
 }
 
 const SearchStar = ({nameFilms, mostrar}: SearchProps) => {

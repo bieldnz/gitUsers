@@ -2,7 +2,7 @@ import React from 'react'
 import Styles from "../../styles/starwars.module.css"
 import SearchStar from './SearchStar'
 import LayoutStar from "./LayoutStar"
-import foto from "https://upload.wikimedia.org/wikipedia/pt/c/cf/LukeTatooine.jpg"
+
 import { useState, useEffect } from "react"
 import { FilmsProps } from '../../types/star'
 
@@ -30,7 +30,7 @@ const StarWars = () => {
     dataResult = await searchFilms()
     const characters = await searchCaracters(dataResult[0].characters)
     let filmsResult: string[] = []
-    dataResult.map((item: any) => {
+    dataResult.map((item: FilmsProps) => {
       filmsResult.push(item.title)
     })
     const {title, episode_id, opening_crawl, director} = dataResult[0]
@@ -45,7 +45,7 @@ const StarWars = () => {
 
   async function mostrar(name: string) {
     dataResult = await searchFilms()
-    const dataFiltered = await dataResult.filter((item: any) => item.title === name)
+    const dataFiltered = await dataResult.filter((item: FilmsProps) => item.title === name)
     const characters = await searchCaracters(dataFiltered[0].characters)
     const {title, episode_id, opening_crawl, director} = dataFiltered[0]
     const dataFilms:FilmsProps = {id: episode_id, title: title, sinopse: opening_crawl, director: director, characters: characters}
