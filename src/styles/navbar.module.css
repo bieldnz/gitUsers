@@ -1,0 +1,17 @@
+nav ul{
+    background-color: #244242;
+    display: flex;
+    list-style: none;
+    height: 80px;
+}
+nav ul li{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    cursor: pointer;
+}

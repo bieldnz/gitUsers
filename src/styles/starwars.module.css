@@ -1,0 +1,65 @@
+.allStar{
+    width: 100%;
+    height: 100%
+}
+.allStar select{
+    max-width: 368px;
+    width: 90%;
+    margin: 0 auto;
+}
+option{
+    color: black
+}
+.starContent{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.starContent section {
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    max-width: 1000px;
+    border: 10px solid white;
+}
+.starContent section div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.starContent section div p{
+    margin: 10px 0 10px 0;
+    
+}
+.dataContent{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    border-bottom: 5px solid white;
+}
+.sinopse{
+    height: 100%;
+    border-top: 5px solid white;
+    padding: 10px 5px 10px 5px;
+}
+.starContent section img{
+    min-width: 50%;
+    height: 100%;
+    border-right: solid 10px white;
+}
+
+@media only screen and (max-width:785px) {
+    .starContent section{
+        flex-direction: column;
+        width: 90%;
+    }
+    .starContent{
+        height: fit-content;
+    }
+    .starContent section img{
+        border-right: 0;
+    }
+}

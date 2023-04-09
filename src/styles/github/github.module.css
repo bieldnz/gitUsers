@@ -1,0 +1,109 @@
+.allGit{
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    margin-top: 50px;
+}
+.esqGit{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.dirGit{
+    width: 50%;
+    overflow: hidden;
+}
+.boxDirGit{
+    width: 50%;
+    height: fit-content;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+    transform: translateY(-1000px);
+    transition: 1s;
+}
+.boxDirGit ul{
+    height: fit-content;
+    width: 100%;
+    color: white;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #244242;
+    border: solid 10px #244242;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: 0;
+}
+.boxDirGit ul li a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.mostrar{
+    transform: translateY(0) !important;
+}
+.boxEsqGit{
+    width: fit-content;
+    height: fit-content;
+    border: 10px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.boxEsqGitInside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #244242;
+    font-weight: 1000;
+    color: white;
+    border-radius: 10px;
+    border: 10px solid #244242;
+}
+.boxEsqGitInside h1{
+    color: white;
+    font-family:'Kanit', sans-serif;;
+}.boxEsqGitInside img{
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.boxInput{
+    width: 100%;
+    display: flex;
+}
+.boxInput input{
+    width: calc(100% - 50px);
+    height: 50px;
+    padding: 5px;
+    z-index: 998;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+.boxInput button{
+    width: 50px;
+    height: 50px;
+    z-index: 997;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-self: flex-end;
+    background-color: #079ea6;
+    border: none;
+    cursor: pointer;
+
+}
+.boxInput button svg{
+    font-size: 30px;
+}
